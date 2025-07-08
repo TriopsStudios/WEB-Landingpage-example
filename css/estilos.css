@@ -1,0 +1,174 @@
+/*
+Feldgrau #3F5E5A
+Jet #2D2D2A
+Black Olive #38423B
+Alabaster #F2F0EB
+*/
+
+
+
+.barraPrimera{
+    color: white;
+    display:flex;
+    justify-content: space-between;
+ 
+    background-color: #001a2d;
+     margin:0.2%;
+}
+
+.navBarContainer{
+    
+  
+    box-shadow: 2px 2px 2px black, 4px 4px 4px #00272D;
+
+}
+
+@keyframes moverTodoArriba {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+body{
+    /*background-color: #F2F0EB;*/
+    /*background-color: #132547;*/
+    background: linear-gradient(to bottom, #000000, #00272D, #134647);
+    animation: moverTodoArriba 0.7s ease forwards;
+}
+
+.contentContainer{
+  
+    display: flex;
+    justify-content: space-between;
+   
+    color: #F2F0EB;
+    /*background: linear-gradient(to bottom, #000000, #00272D, #134647);*/
+
+
+
+    box-shadow: 1px 1px 2px black, 2px 2px 6px #3F5E5A;
+    margin:0.2%;
+}
+
+h1{
+font-size: 100%;
+ text-shadow: 2px 2px 4px #1e787a;
+}
+h2{
+font-size: 100%;
+    text-shadow: 2px 2px 4px #1e787a;
+}
+
+.contenidoLateral{
+    display:flex;
+    flex-direction: column;
+     justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  width: 70%;
+}
+
+.flexItem{
+    flex:1;
+    text-align: center;
+}
+
+.menuLateral{
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+      top: 50%;
+      align-self: flex-start;
+  height: fit-content;
+  justify-content: top; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  width:20%;
+}
+
+#proyectos{
+     display: flex;
+      flex-direction: column;
+  justify-content: top; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+}
+
+@keyframes aumentarTamañoLetra {
+
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+    
+}
+@keyframes reducirTamañoLetra {
+
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+
+
+
+@keyframes cambiarColorLetra{
+
+    0%{
+        color: white;
+    }
+    100%{
+        color: rgb(44, 76, 158);
+    }
+
+}
+
+@keyframes cambiarColorLetraInversa{
+
+    0%{
+        color: rgb(44, 76, 158);
+    }
+    100%{
+        color: white;
+    }
+
+}
+
+@keyframes moverTextoAIzquierda{
+
+    0%{
+        transform: translateX(1.5rem);
+    }
+    100%{
+       transform:  translateX(1);
+    }
+}
+
+
+@keyframes moverTextoADerecha{
+
+    0%{
+        transform: translateX(1rem);
+    }
+    100%{
+       transform:  translateX(1.5rem);
+    }
+}
+
+a:hover{
+    animation: aumentarTamañoLetra 0.5s linear forwards, moverTextoADerecha 0.5s linear forwards, cambiarColorLetra 0.5s linear forwards;
+
+   
+   
+}
+
+a:not(:hover){
+     animation: reducirTamañoLetra 0.5s linear forwards, moverTextoAIzquierda 0.5s linear forwards, cambiarColorLetraInversa 0.5s linear forwards;
+}
+
