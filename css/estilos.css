@@ -13,7 +13,7 @@ Alabaster #F2F0EB
     justify-content: space-between;
  
     background-color: #001a2d;
-     margin:0.2%;
+   
 }
 
 .navBarContainer{
@@ -50,7 +50,7 @@ body{
 
 
     box-shadow: 1px 1px 2px black, 2px 2px 6px #3F5E5A;
-    margin:0.2%;
+    margin-bottom:0.2%;
 }
 
 h1{
@@ -68,11 +68,14 @@ font-size: 100%;
      justify-content: center; /* Centra horizontalmente */
   align-items: center;     /* Centra verticalmente */
   width: 70%;
+ 
+  
 }
 
 .flexItem{
     flex:1;
     text-align: center;
+    margin-bottom:20px;
 }
 
 .menuLateral{
@@ -85,6 +88,7 @@ font-size: 100%;
   justify-content: top; /* Centra horizontalmente */
   align-items: center;     /* Centra verticalmente */
   width:20%;
+  
 }
 
 #proyectos{
@@ -92,6 +96,7 @@ font-size: 100%;
       flex-direction: column;
   justify-content: top; /* Centra horizontalmente */
   align-items: center;     /* Centra verticalmente */
+  margin-bottom:100px;
 }
 
 @keyframes aumentarTamañoLetra {
@@ -172,3 +177,8 @@ a:not(:hover){
      animation: reducirTamañoLetra 0.5s linear forwards, moverTextoAIzquierda 0.5s linear forwards, cambiarColorLetraInversa 0.5s linear forwards;
 }
 
+footer{
+     background-color: #001a2d;
+     color: white;
+   
+}
